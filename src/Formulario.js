@@ -9,7 +9,7 @@ class Formulario extends React.Component {
       this.state = {
          name: '',
          age: '',
-         status: ''
+         status: '',
       } 
    }
 
