@@ -22,3 +22,14 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.card {
+  display: flex;
+  justify-content: center;
+}
+.card-student {
+  width: 100px;
+  border: solid 7px;
+  border-color: red;
+  background-color: blue;
+}
+

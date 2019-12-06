@@ -84,19 +84,28 @@ class Studentslist extends React.Component {
    
    showStudents = () => {
        this.state.students.map(item =>{
-            console.log(item.name, item.age, item.status)
+            // console.log(item.name, item.age, item.status)
             return null
        })
    } 
 
    render() {
       return (
-          <button onClick={this.showStudents}>Click me</button>        
-      )
+         <div className='card'>
+            {/* <button onClick={this.showStudents}>Click me</button>    */}
+            {this.state.students.map((student, index) =>{
+               return (
+                  <div className='card-student' key={index}>
+                     <h1>{student.name}</h1>
+                     <h2>{student.age}</h2>
+                     <h3>{student.status}</h3>
+                  </div>
+               );
+            })}
+         </div>               
+      )         
    }
-
 }
-
 
 
 export default Studentslist;
